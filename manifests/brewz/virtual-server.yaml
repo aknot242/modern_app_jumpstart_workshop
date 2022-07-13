@@ -24,6 +24,9 @@ spec:
     - name: recommendations-v2
       service: recommendations-v2
       port: 8001
+    - name: recommendations-vnext
+      service: recommendations-v2
+      port: 8001
   routes:
     - path: /
       matches:
