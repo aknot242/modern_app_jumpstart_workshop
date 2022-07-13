@@ -6,7 +6,7 @@ metadata:
 spec:
   host: brewz.f5demo.com
   policies:
-      - name: waf-policy
+    - name: waf-policy
   upstreams:
     - name: spa
       service: spa
