@@ -61,3 +61,13 @@ spec:
         proxy:
           upstream: checkout
           rewritePath: /api/order
+      errorPages:
+        - codes: [401]
+          return:
+            code: 401
+            type: application/json
+            body: |
+              {\"msg\": \"Authorization Required\"}
+            headers:
+              - name: x-debug-original-status
+                value: ${upstream_status}
