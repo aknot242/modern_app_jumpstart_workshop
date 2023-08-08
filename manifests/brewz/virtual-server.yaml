@@ -55,6 +55,8 @@ spec:
           upstream: api
           rewritePath: /images
     - path: /api/order
+      policies:
+        - name: jwt-policy
       action:
         proxy:
           upstream: checkout
