@@ -4,9 +4,9 @@ kind: VirtualServer
 metadata:
   name: brewz
 spec:
-  host: brewz.f5demos.com
+  host: brewz.f5demo.com
   tls:
-    secret: f5demos-wildcard-tls-secret
+    secret: brewz-tls
     redirect:
       enable: true
   upstreams:
